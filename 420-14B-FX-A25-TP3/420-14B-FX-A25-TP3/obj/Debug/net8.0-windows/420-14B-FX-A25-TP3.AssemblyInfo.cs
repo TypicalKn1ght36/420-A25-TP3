@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("420-14B-FX-A25-TP3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d47a0cdc7cd66b24e254f5b4e1a3db6164f5e32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76283c60d540392b95fea58415d560640a49ec4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("420-14B-FX-A25-TP3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("420-14B-FX-A25-TP3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

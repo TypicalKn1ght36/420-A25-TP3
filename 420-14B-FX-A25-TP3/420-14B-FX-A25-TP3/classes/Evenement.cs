@@ -92,7 +92,13 @@ namespace _420_14B_FX_A25_TP3.classes
         /// </summary>
         public Evenement(uint id, string nom, TypeEvenement type, DateTime date, decimal prix, int nbPlaces, string imagePath)
         {
-            throw new NotImplementedException();
+            Id = id;
+            Nom = nom;
+            Type = type;
+            DateHeure = date;
+            Prix = prix;
+            NbPlaces = nbPlaces;
+            ImagePath = imagePath;
         }
 
         /// <summary>
@@ -100,7 +106,12 @@ namespace _420_14B_FX_A25_TP3.classes
         /// </summary>
         public Evenement(string nom, TypeEvenement type, DateTime date, decimal prix, int nbPlaces, string imagePath)
         {
-            throw new NotImplementedException();
+            Nom = nom;
+            Type = type;
+            DateHeure = date;
+            Prix = prix;
+            NbPlaces = nbPlaces;
+            ImagePath = imagePath;
         }
     }
 }

@@ -8,8 +8,8 @@ namespace _420_14B_FX_A25_TP3.classes
     /// </summary>
     public class Billet
     {
-        
 
+        private const int QUANTITE_MIN = 1;
         private uint _id;
         private Evenement _evenement;
         private int _quantite;
@@ -46,7 +46,9 @@ namespace _420_14B_FX_A25_TP3.classes
         /// </summary>
         public Billet(uint id, Evenement evenement, int quantite = QUANTITE_MIN)
         {
-            throw new NotImplementedException();
+            Id = id;
+            Evenement = evenement;
+            Quantite = quantite;
         }
 
         /// <summary>
@@ -54,7 +56,8 @@ namespace _420_14B_FX_A25_TP3.classes
         /// </summary>
         public Billet(Evenement evenement)
         {
-            throw new NotImplementedException();
+            Evenement = evenement;
+            Quantite = QUANTITE_MIN;
         }
 
         /// <summary>
@@ -62,17 +65,27 @@ namespace _420_14B_FX_A25_TP3.classes
         /// </summary>
         public override bool Equals(object obj)
         {
-            throw new NotImplementedException();
+            Billet autre = obj as Billet;
+            if (autre == null)
+                return false;
+
+            return Evenement.Id == autre.Evenement.Id;
         }
 
         public static bool operator ==(Billet gauche, Billet droite)
         {
-            throw new NotImplementedException();
+            if (ReferenceEquals(gauche, droite))
+                return true;
+
+            if ((object)gauche == null || (object)droite == null)
+                return false;
+
+            return gauche.Evenement.Id == droite.Evenement.Id;
         }
 
         public static bool operator !=(Billet gauche, Billet droite)
         {
-            throw new NotImplementedException();
+            return !(gauche == droite);
         }
     }
 }
